@@ -1,9 +1,15 @@
 {
   "scripts": {
-    "build:chrome": "echo Building Chrome... && xcopy src\\*.* dist\\chrome\\ /S /I /Y && xcopy src\\icons\\*.* dist\\chrome\\icons\\ /S /I /Y && copy manifest\\manifest.json dist\\chrome\\ && copy node_modules\\webextension-polyfill\\dist\\browser-polyfill.js dist\\chrome\\",
-    "build:firefox": "echo Building Firefox... && xcopy src\\*.* dist\\firefox\\ /S /I /Y && xcopy src\\icons\\*.* dist\\firefox\\icons\\ /S /I /Y && copy manifest\\manifest.firefox.json dist\\firefox\\manifest.json && copy node_modules\\webextension-polyfill\\dist\\browser-polyfill.js dist\\firefox\\"
+    "clean": "node scripts/clean.js",
+    "prebuild": "npm run clean",
+    "build:chrome": "node scripts/build.js chrome",
+    "build:firefox": "node scripts/build.js firefox",
+    "build": "npm run build:chrome && npm run build:firefox"
   },
-  "dependencies": {
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "fs-extra": "^11.2.0",
+    "rimraf": "^5.0.5",
     "webextension-polyfill": "^0.12.0"
   }
 }
