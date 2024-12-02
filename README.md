@@ -17,24 +17,28 @@ A Chrome/Firefox extension that enhances Twitter browsing by adding quick search
 
 ## Project Structure
 
-├── src/                  # Source files
-│   ├── content.js        # Twitter page content script
-│   ├── bsky-handler.js   # Bluesky search page handler
-│   └── icons/           # Extension icons
-│       ├── icon16.png
-│       ├── icon32.png
-│       ├── icon48.png
-│       └── icon128.png
-├── manifest/             # Browser-specific manifests
-│   ├── manifest.json     # Chrome manifest
-│   └── manifest.firefox.json  # Firefox manifest
-├── dist/                 # Built extensions (gitignored)
-│   ├── chrome/          # Chrome extension build
-│   ├── firefox/         # Firefox extension build
-│   └── packages/        # Ready-to-install packages
-│       ├── chrome-extension.zip
-│       └── firefox-extension.zip
-└── package.json         # Build scripts and dependencies
+- ├── src/                  # Source files
+- │   ├── content.js        # Twitter page content script
+- │   ├── bsky-handler.js   # Bluesky search page handler
+- │   └── icons/           # Extension icons
+- │       ├── icon16.png
+- │       ├── icon32.png
+- │       ├── icon48.png
+- │       └── icon128.png
+- ├── manifest/             # Browser-specific manifests
+- │   ├── manifest.json     # Chrome manifest
+- │   └── manifest.firefox.json  # Firefox manifest
+- ├── scripts/ # Build scripts
+- │   ├── build.js # Main build script
+- │   └── clean.js # Clean script
+- ├── dist/ # Built extensions (gitignored)
+- │   ├── chrome/ # Chrome extension build
+- │   ├── firefox/ # Firefox extension build
+- │   └── packages/ # Ready-to-install packages
+- │       ├── chrome-extension.zip
+- │       └── firefox-extension.zip
+- ├── package.json # Build scripts and dependencies
+- └── .gitignore # Git ignore rules
 
 ## Development Setup
 
