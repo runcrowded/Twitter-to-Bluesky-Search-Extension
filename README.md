@@ -51,24 +51,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 MIT License 
-
-## Distribution
-
-### Chrome Web Store
-1. Create a ZIP file of the `dist/chrome` directory
-2. Register as Chrome Web Store developer ($5 fee)
-3. Submit through [Chrome Developer Dashboard](https://chrome.google.com/webstore/devconsole)
-4. Provide store assets:
-   - Screenshots (1280x800 or 640x400)
-   - Icon (128x128)
-   - Promotional images
-   - Description
-
-### Firefox Add-ons
-1. Create a ZIP file of the `dist/firefox` directory
-2. Create account on [Firefox Add-ons](https://addons.mozilla.org/developers/)
-3. Submit the ZIP file
-4. Provide store assets:
-   - Screenshots
-   - Icons (48x48, 96x96, 128x128)
-   - Description 
