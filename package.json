@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:chrome": "echo Building Chrome... && xcopy src\\*.* dist\\chrome\\ /S /I /Y && xcopy src\\icons\\*.* dist\\chrome\\icons\\ /S /I /Y && copy manifest\\manifest.json dist\\chrome\\ && copy node_modules\\webextension-polyfill\\dist\\browser-polyfill.js dist\\chrome\\",
+    "build:firefox": "echo Building Firefox... && xcopy src\\*.* dist\\firefox\\ /S /I /Y && xcopy src\\icons\\*.* dist\\firefox\\icons\\ /S /I /Y && copy manifest\\manifest.firefox.json dist\\firefox\\manifest.json && copy node_modules\\webextension-polyfill\\dist\\browser-polyfill.js dist\\firefox\\"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.12.0"
+  }
+}

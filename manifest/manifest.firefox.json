@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter to Bluesky Search",
+  "version": "1.0",
+  "description": "Adds clickable icons next to Twitter usernames and display names to search them on Bsky.app",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "twitter-to-bluesky@yourdomain.com",
+      "strict_min_version": "57.0"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "https://twitter.com/*",
+    "https://x.com/*",
+    "*://*.bsky.app/search*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["browser-polyfill.js", "content.js"]
+    },
+    {
+      "matches": ["*://*.bsky.app/search*"],
+      "js": ["browser-polyfill.js", "bsky-handler.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+} 
