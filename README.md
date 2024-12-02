@@ -64,8 +64,8 @@ The built extensions will be available in:
 
 ### Quick Install
 1. Download the extension package for your browser:
-   - [Chrome Extension Package](dist/packages/chrome-extension.zip)
-   - [Firefox Extension Package](dist/packages/firefox-extension.zip)
+   - [Chrome Extension Package](https://raw.githubusercontent.com/runcrowded/Twitter-to-Bluesky-Search-Extension/refs/heads/main/dist/packages/chrome-extension.zip)
+   - [Firefox Extension Package](https://raw.githubusercontent.com/runcrowded/Twitter-to-Bluesky-Search-Extension/refs/heads/main/dist/packages/firefox-extension.zip)
 
 2. For Chrome:
    - Open Chrome and navigate to `chrome://extensions/`
